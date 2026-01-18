@@ -1,26 +1,18 @@
-# Temporary Word files
-~$*
-*.tmp
-
-# Notes (but track Original Document)
-Notes.docx
-Notes.*
-*Notes*
-
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+
+# Virtual environments
 env/
 venv/
 ENV/
-.venv
+.venv/
 
 # Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb_checkpoints/
+.ipynb_checkpoints/
 
 # IDE
 .vscode/
@@ -32,4 +24,3 @@ ENV/
 # OS
 .DS_Store
 Thumbs.db
-
