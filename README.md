@@ -21,6 +21,8 @@ Data processing: Monthly returns calculated from adjusted close prices
 ## Observed Results
 
 **Performance Metrics (2014-2023)**
+<img width="1001" height="547" alt="output" src="https://github.com/user-attachments/assets/5acf64aa-b85f-4e6a-b7e8-84f7675fd438" />
+
 | ETF | Description | Ann. Return | Ann. Volatility | Sharpe | Sortino |
 |-----|-------------|-------------|-----------------|--------|---------|
 | SPY | US large cap | 12.46% | 15.16% | 0.74 | 1.07 |
