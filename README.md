@@ -64,8 +64,19 @@ SPY's Sharpe ratio (0.74) significantly exceeds EEM (0.12) and FM (0.08), with t
 pip install -r requirements.txt
 `` 
 
-### Running the Analysis
-Just run all cells and take a look at the notes
+## Reproduce this analysis
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourname/repo-name.git
+   cd repo-name
+2. ```bash
+   python -m venv venv
+    source venv/bin/activate  # Windows: venv\Scripts\activate
+3. ``` bash
+       pip install -r requirements.txt
+4. Open the notebook and run all cells and result will be recreated
+
 
 ## Further Work / Notes
 - Time period could be increased
