@@ -18,6 +18,8 @@ Time period: 2013-12-31 to 2023-12-31 (monthly data)
 
 Data processing: Monthly returns calculated from adjusted close prices
 
+**Data persistence**: The repository includes pre-collected data files in `data/` directory. When cloning from GitHub, the notebook uses these saved files, eliminating dependency on yfinance API (yfinance is unofficial and Yahoo's API can change or stop providing historical data for these dates). This ensures the analysis remains reproducible even if yfinance breaks.
+
 ## Observed Results
 
 **Performance Metrics (2014-2023)**
@@ -57,6 +59,7 @@ SPY's Sharpe ratio (0.74) significantly exceeds EEM (0.12) and FM (0.08), with t
 - All analysis is done on a macro level
 - Doesn't account for differing industries, market cap etc of average company within these ETFs
 - 2014-2023 has been generally bullish market so this doesn't account for how the different funds would react under far more stress
+- Data originally sourced via unofficial yfinance library; pre-collected data included in repository to ensure reproducibility independent of yfinance API availability
 ## How to Run / Reproduce
 
 ### Prerequisites
@@ -75,7 +78,7 @@ pip install -r requirements.txt
     source venv/bin/activate  # Windows: venv\Scripts\activate
 3. ``` bash
        pip install -r requirements.txt
-4. Open the notebook and run all cells and result will be recreated
+4. Open the notebook and run all cells. The repository includes pre-collected data in `data/` directory, so the notebook will use these files automatically—no yfinance download required. This ensures reproducibility even if yfinance stops working or Yahoo removes historical data for these dates.
 
 
 ## Further Work / Notes
